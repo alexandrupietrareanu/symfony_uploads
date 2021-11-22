@@ -1,4 +1,4 @@
-# File Uploads in Symfony
+  {% if articleForm.vars.data.imageFilename %}# File Uploads in Symfony
 
 Well hi there! This repository holds the code and script
 for the [File Uploads in Symfony](https://symfonycasts.com/screencast/symfony-uploads) course on SymfonyCasts.

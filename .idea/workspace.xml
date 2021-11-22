@@ -3,10 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="46fd664c-a803-40b5-8514-4e2b90bf0751" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uploads.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uploads.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/alien-profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/article_image/images/alien-profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/asteroid.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/article_image/images/asteroid.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/astronaut-profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/article_image/images/astronaut-profile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/lightspeed.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/article_image/images/lightspeed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/mercury.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/article_image/images/mercury.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/meteor-shower.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/article_image/images/meteor-shower.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/space-ice.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/article_image/images/space-ice.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/space-nav.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/article_image/images/space-nav.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/ArticleFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ArticleFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/UploaderHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/UploaderHelper.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/article/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/homepage.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article_admin/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article_admin/_form.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,10 +43,14 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/templates/article_admin/_form.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Service/UploaderHelper.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/vendor/liip/imagine-bundle/Controller/ImagineController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/var/log/dev.log" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/templates/base.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/config/routes/annotations.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/.gitignore" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/templates/article_admin/edit.html.twig" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/public/.htaccess" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Controller/ArticleController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/config/packages/twig.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Controller/ArticleAdminController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Twig/AppExtension.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -49,6 +65,16 @@
     <setting file="file://$PROJECT_DIR$/src/Form/ArticleFormType.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/config/packages/security.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/config/packages/liip_imagine.yaml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="127.0.01" id="5766c0e4-a90d-4e2d-8692-f694307232a9" name="localhost" />
+      <server host="127.0.0.1" id="df136005-1ddb-49b5-b9ae-75e61e8df4ff" name="127.0.0.1" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/vendor/knplabs/knp-markdown-bundle/Tests/Performance" remote-root="/var/www/html/uploads/public" />
+        </path_mappings>
+      </server>
+    </servers>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -184,23 +210,32 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/code-symfony-uploads" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/DataFixtures/images" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/DataFixtures/images" />
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/uploads/article_image" />
       <recent name="$PROJECT_DIR$/src/Service" />
       <recent name="$PROJECT_DIR$/public" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHP Remote Debug.uploads">
     <configuration name="phpunit.xml.dist" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <configuration name="uploads" type="PhpRemoteDebugRunConfigurationType" factoryName="PHP Remote Debug" filter_connections="FILTER" server_name="localhost" session_id="PHPSTORM">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="PHP Remote Debug.uploads" />
+      <item itemvalue="PHPUnit.phpunit.xml.dist" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -211,7 +246,7 @@
       <option name="presentableId" value="Default" />
       <updated>1637325867319</updated>
       <workItem from="1637325868452" duration="13919000" />
-      <workItem from="1637565579280" duration="303000" />
+      <workItem from="1637565579280" duration="6320000" />
     </task>
     <servers />
   </component>
@@ -229,5 +264,41 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/templates/article/homepage.html.twig</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/vendor/liip/imagine-bundle/Controller/ImagineController.php</url>
+          <line>115</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/vendor/liip/imagine-bundle/Controller/ImagineController.php</url>
+          <line>116</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/vendor/liip/imagine-bundle/Controller/ImagineController.php</url>
+          <line>141</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/vendor/liip/imagine-bundle/Controller/ImagineController.php</url>
+          <line>147</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/vendor/liip/imagine-bundle/Controller/ImagineController.php</url>
+          <line>139</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
