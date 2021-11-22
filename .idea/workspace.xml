@@ -2,23 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46fd664c-a803-40b5-8514-4e2b90bf0751" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/alien-profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/article_image/images/alien-profile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/asteroid.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/article_image/images/asteroid.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/astronaut-profile.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/article_image/images/astronaut-profile.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/lightspeed.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/article_image/images/lightspeed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/mercury.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/article_image/images/mercury.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/meteor-shower.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/article_image/images/meteor-shower.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/space-ice.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/article_image/images/space-ice.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/space-nav.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/uploads/article_image/images/space-nav.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/alien-profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/asteroid.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/astronaut-profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/avatar-156199015b65abe-png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/avatar-15619903f717ec0-png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/avatar-19619903034d96e-png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/avatar-206199014027473-png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/avatar-20619b549853aff-png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/avatar-9619905c52661c-png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/images/alien-profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/images/asteroid.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/images/astronaut-profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/images/lightspeed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/images/mercury.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/images/meteor-shower.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/images/space-ice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/images/space-nav.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/lightspeed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/mercury.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/meteor-shower.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/space-ice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/uploads/article_image/space-nav.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataFixtures/ArticleFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/ArticleFixtures.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Service/UploaderHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/UploaderHelper.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/homepage.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/article_admin/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article_admin/_form.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,7 +254,7 @@
       <option name="presentableId" value="Default" />
       <updated>1637325867319</updated>
       <workItem from="1637325868452" duration="13919000" />
-      <workItem from="1637565579280" duration="6320000" />
+      <workItem from="1637565579280" duration="6979000" />
     </task>
     <servers />
   </component>
