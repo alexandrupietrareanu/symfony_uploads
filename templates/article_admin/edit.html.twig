@@ -3,13 +3,54 @@
 {% block content_body %}
     <h1>Edit the Article! 🚀</h1>
 
-    {{ include('article_admin/_form.html.twig', {
-        button_text: 'Update!'
-    }) }}
+    <hr/>
+
+    <div class="row">
+        <div class="col-sm-8">
+            <h3>Details</h3>
+            {{ include('article_admin/_form.html.twig', {
+                button_text: 'Update!'
+            }) }}
+        </div>
+        <div class="col-sm-4">
+            <h3>References</h3>
+            <ul class="list-group small js-reference-list" data-url="{{ path('admin_article_list_references', {id: article.id}) }}"></ul>
+{#            <ul class="list-group small">#}
+{#                {% for reference in article.articleReferences %}#}
+{#                    <li class="list-group-item d-flex justify-content-between align-items-center">#}
+{#                        {{ reference.originalFilename }}#}
+
+{#                        <span>#}
+{#                            <a href="{{ path('admin_article_download_reference', {#}
+{#                                id: reference.id#}
+{#                            }) }}"><span class="fa fa-download"></span></a>#}
+{#                        </span>#}
+{#                    </li>#}
+{#                {% endfor %}#}
+{#            </ul>#}
+
+            <hr/>
+
+            <form action="{{ path('admin_article_add_reference', {
+                id: article.id
+            }) }}" method="POST" enctype="multipart/form-data" class="dropzone js-reference-dropzone">
+            </form>
+        </div>
+    </div>
+
+{#    {{ include('article_admin/_form.html.twig', { button_text: 'Update!'  }) }}#}
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.css" integrity="sha256-e47xOkXs1JXFbjjpoRr1/LhVcqSzRmGmPqsrUQeVs+g=" crossorigin="anonymous" />
 {% endblock %}
 
 {% block javascripts %}
     {{ parent() }}
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.5.1/min/dropzone.min.js" integrity="sha256-cs4thShDfjkqFGk5s2Lxj35sgSRr4MRcyccmi0WKqCM=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.14.0/Sortable.min.js" integrity="sha256-DqWm+/v1Q0tgaHhTPLema89wDw8Ir+kIM10JePtjrZQ=" crossorigin="anonymous"></script>
 
     <script src="{{ asset('js/admin_article_form.js') }}"></script>
 {% endblock %}

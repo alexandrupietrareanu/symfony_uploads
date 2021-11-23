@@ -6,6 +6,10 @@
 parameters:
     cache_adapter: cache.adapter.apcu
     locale: 'en'
+#    uploads_dir_name: 'uploads/'
+    uploads_base_url: 'https://%env(AWS_S3_ACCESS_BUCKET)%.s3.%env(AWS_S3_REGION)%.amazonaws.com/'
+#    uploads_base_url: 'https://s3.amazonaws.com/%env(AWS_S3_ACCESS_BUCKET)%'
+#    uploads_base_url: '%env(SITE_BASE_URL)%/%uploads_dir_name%'
 
 services:
     # default configuration for services in *this* file
@@ -20,7 +24,9 @@ services:
         bind:
             $markdownLogger: '@monolog.logger.markdown'
             $isDebug: '%kernel.debug%'
-            $uploadsPath: '%kernel.project_dir%/public/uploads'
+            $publicUploadFilesystem: '@oneup_flysystem.public_uploads_filesystem_filesystem'
+#            $privateUploadFilesystem: '@oneup_flysystem.private_uploads_filesystem_filesystem'
+            $uploadedAssetsBaseUrl: '%uploads_base_url%'
 
     # custom aliases for autowiring
     Nexy\Slack\Client: '@nexy_slack.client'
@@ -46,3 +52,11 @@ services:
                 extended_type: Symfony\Component\Form\Extension\Core\Type\TextareaType }
 
     Symfony\Component\Asset\Context\RequestStackContext: '@assets.context'
+
+    Aws\S3\S3Client:
+        arguments:
+            - version: '2006-03-01'
+              region: "us-east-2"
+              credentials:
+                  key: '%env(AWS_S3_ACCESS_ID)%'
+                  secret: '%env(AWS_S3_ACCESS_SECRET)%'
